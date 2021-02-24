@@ -1,38 +1,48 @@
 body {
-    background-image: url('https://mdn.mozillademos.org/files/7693/catfront.png');
     font-family: Helvetica, sans-serif;
     margin: 1%;
-    border: solid black 4px;
+    border: solid  black 2px;
 }
 
 h1 {
+    font-size: 72pt;
+    color: rgb(224, 129, 230);
+    text-decoration: underline;
+    padding: 1%;
     margin: .6%;
+}
+
+nav {
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
+    padding: 1%;
 }
 
 
 nav li {
     display: inline;
-    border: solid black 2px;
+    border: solid  black 2px;
     border-radius: 100%;
     padding: 10px;
+    margin: 10%;
 }
 
 a {
-    color: black;
+    text-decoration: none;
+    color:  black;
 }
 
 section p {
-    color: black;
+    color:  black;
     text-align: left;
     font-size: small;
 }
 
 section {
-    border: solid black 2px;
+    border: solid  black 2px;
     border-left: none;
     border-right: none;
     padding: .6%;
