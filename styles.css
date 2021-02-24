@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: auto;
+}
+
+nav {
+    margin: 20px;
+}
+
+nav li {
+    display: inline;
+    border: solid black 2px;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+a {
+    color: black;
+}
+
+section p {
+    color: black;
+    text-align: center;
+    font-size: small;
+    border: solid black 2px;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+}
+
+section {
+    border: solid black 2px;
+    border-right: 10px;
+}
