@@ -19,10 +19,9 @@ h1:hover, nav li:hover, a:hover{
     border-color: seagreen;
 }
 
-h2 {
-    margin-left: 5%;
+#username {
+    margin: .6%;
 }
-
 
 nav {
     text-align: center;

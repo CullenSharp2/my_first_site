@@ -1,30 +1,33 @@
 'use strict'
 
-let getUsername = () => {
-    username = prompt('what is your name');
+function getUsername(){
+    let username = prompt('what is your name');
     return (username);
 }
 
-let validateName = (username) => {
+function validateName(username){
+    console.log("eval");
     if (username !== "") {
-        return(username)
+        return(username);
     } else {
-        prompt("Enter an username");
+        getUsername();
+        validateName();
         console.log('username not found');
     }
 }
 
-let writeName = (username) => {
-    document.write(`<h2>${username}</h2>`);
+function writeName(username){
+    document.write(`<h3 id="username"> welcome: ${username}</h3>`);
     console.log('success')
 }
 
-function render(getUsername, validateName, writeName) {
-    writeName(validateName(getUsername));
+function render(username) {
+    console.log(username);
+    writeName(validateName(username));
 }
 
-let getDate = () => {
-    timeOfDay = Date();
+function getDate(){
+    let timeOfDay = Date();
     if (timeOfDay !== "") {
         document.write(`<p>${timeOfDay}</p>`);
     } else {
