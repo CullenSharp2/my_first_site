@@ -9,6 +9,28 @@ function getName(){
     return (username);
 }
 
+function game() {
+    let answer = Math.floor(Math.random() * Math.floor(10));
+    let guess = prompt('what number am I thinking of between 0 and 10?');
+    let chances = 3;
+
+    while(parseInt(guess) !== answer && chances > 0) {
+        if(parseInt(guess) < answer){
+            guess=prompt('Too low.');
+            chances = chances - 1;
+        } else {
+            guess=prompt('Too high.')
+            chances = chances - 1;
+        }
+    } 
+
+    if(chances > 0) {
+        alert(`You guessed it! My number was ${answer}`);
+    } else {
+        alert(`Sorry, you're out of guesses. My number was ${answer}. Refresh to try again.`)
+    }
+}
+
 function getDate(){
     let timeOfDay = Date();
     if (timeOfDay !== "") {
